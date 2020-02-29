@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,18 @@
     <title></title>
 </head>
 <body>
-    
+    <script>
+        frase = prompt("Digite sua frase")
+        numero_vogais = 0
+        frase_vetor = frase.split("")
+
+        for(i = 0; i < frase_vetor.length; i++){
+            if (frase_vetor[i] == "a" || frase_vetor[i] == "e" ||frase_vetor[i] == "i" ||frase_vetor[i] == "o" ||frase_vetor[i] == "u") {
+                numero_vogais++
+                console.log(numero_vogais)
+            }
+        }
+        alert("o numero de vogais é: " + numero_vogais)
+    </script>
 </body>
 </html>

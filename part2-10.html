@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>part2-10</title>
+</head>
+<body>
+    <script>
+        numero_linhas = Number(prompt("Digite o número de linhas"))
+        numero_colunas = Number(prompt("Digite o número de colunas"))
+        
+        for (i = 0; i < numero_linhas; i++){
+            document.write("<br><br>")
+            for (j = 0; j < numero_colunas; j++){
+                if (i == j){
+                    document.write("1")
+                }
+                else {
+                    document.write("0")
+                }
+            }
+        }
+    </script>
+</body>
+</html>
